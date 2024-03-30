@@ -19,8 +19,6 @@ export default function Login() {
                 </p>
               </div>
 
-              <div className="login-valid-info"></div>
-
               <form
                 action="http://localhost:4200/"
                 method="post"

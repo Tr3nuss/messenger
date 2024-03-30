@@ -1,8 +1,12 @@
 import "../styles/Register.css";
 import registerImage from "../assets/images/registerImage.jpg";
 import { TextField, Checkbox, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Register() {
+  const inputTextFields = ["Почта", "Логин"];
+  const inputPasswordFields = ["Пароль", "Подтверждение пароля"];
+
   return (
     <>
       <div className="container">
@@ -15,7 +19,7 @@ export default function Register() {
               <div className="header-title">
                 <h1>Регистрация</h1>
                 <p>
-                  Уже зарегистрированы? <a href="#">Войти</a> в аккаунт
+                  Уже зарегистрированы? <Link to="/login">Войти</Link> в аккаунт
                 </p>
               </div>
             </header>
@@ -25,37 +29,25 @@ export default function Register() {
               method="post"
               className="input-field"
             >
+              {inputTextFields.map((el, i) => (
+                <TextField
+                  size="small"
+                  label={inputTextFields[i]}
+                  variant="outlined"
+                  type="text"
+                  className="text-field"
+                />
+              ))}
 
-              
-              <TextField
-                size="small"
-                label="Отображаемое имя"
-                placeholder="Отображаемое имя"
-                variant="outlined"
-                type="text"
-                className="text-field"
-              />
-              <TextField
-                size="small"
-                label="Логин"
-                variant="outlined"
-                type="text"
-                className="text-field"
-              />
-              <TextField
-                size="small"
-                label="Пароль"
-                variant="outlined"
-                type="password"
-                className="text-field"
-              />
-              <TextField
-                size="small"
-                label="Подтверждение пароля"
-                variant="outlined"
-                type="password"
-                className="text-field"
-              />
+              {inputPasswordFields.map((el, i) => (
+                <TextField
+                  size="small"
+                  label={inputPasswordFields[i]}
+                  variant="outlined"
+                  type="password"
+                  className="text-field"
+                />
+              ))}
 
               <div className="input-accept-rules">
                 <Checkbox
