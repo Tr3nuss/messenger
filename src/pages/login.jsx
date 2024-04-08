@@ -1,4 +1,5 @@
-import "../styles/Login.css";
+import "../styles/PageStyles/Login.css";
+import { Link } from "react-router-dom";
 import registerImage from "../assets/images/registerImage.jpg";
 import { TextField, Checkbox, Button } from "@mui/material";
 
@@ -15,11 +16,9 @@ export default function Login() {
               <div className="header-title">
                 <span>Вход в Allah.cc</span>
                 <p>
-                  Ещё нет аккаунта? <a href="#">Регистрация</a>
+                  Ещё нет аккаунта? <Link to="/">Регистрация</Link>
                 </p>
               </div>
-
-              <div className="login-valid-info"></div>
 
               <form
                 action="http://localhost:4200/"
@@ -47,7 +46,9 @@ export default function Login() {
                 <div className="input-accept-rules">
                   <Checkbox size="small" />
                   <p className="checkbox-text">Оставаться в системе</p>
-                  <a>Забыли пароль?</a>
+                  <Link className="forgot-password-link" to={"*"}>
+                    Забыли пароль?
+                  </Link>
                 </div>
 
                 <Button
@@ -63,7 +64,9 @@ export default function Login() {
                   }}
                   variant="contained"
                 >
-                  Войти
+                  <Link to="/mail" className="login-button-confirm">
+                    Войти
+                  </Link>
                 </Button>
               </form>
             </header>

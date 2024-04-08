@@ -93,7 +93,12 @@ header {
   padding-right: 30px;
 }
 
-.input-accept-rules a {
+.input-accept-rules .forgot-password-link {
   color: #f97316;
   font-size: 14px;
+}
+
+.login-button-confirm {
+  color: #fff;
+  text-decoration: none;
 }
