@@ -87,3 +87,8 @@ header {
   border-radius: 0.375rem;
   background: #ffffff0d;
 }
+
+.register-button-confirm {
+  color: #fff;
+  text-decoration: none;
+}

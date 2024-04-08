@@ -1,4 +1,4 @@
-import "../styles/Register.css";
+import "../styles/PageStyles/Register.css";
 import registerImage from "../assets/images/registerImage.jpg";
 import { TextField, Checkbox, Button } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -73,10 +73,14 @@ export default function Register() {
                   textTransform: "none",
                   border: "1px solid #E6563D",
                   "&:hover": { background: "#E6563D" },
+                  color: "white",
+                  textDecoration: "none",
                 }}
                 variant="contained"
               >
-                Создать аккаунт
+                <Link to="/login" className="register-button-confirm">
+                  Создать аккаунт
+                </Link>
               </Button>
             </form>
           </div>
