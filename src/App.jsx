@@ -1,4 +1,6 @@
 import "./App.css";
+import Dialogs from "./components/Dialogs";
+
 import Mail from "./pages/Mail";
 import Login from "./pages/login";
 import Register from "./pages/register";
@@ -10,7 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/mail" element={<Mail />}></Route>
+        <Route path="/mail" element={<Mail />}>
+          <Route index element={<Dialogs />} />
+        </Route>
       </Routes>
     </>
   );
