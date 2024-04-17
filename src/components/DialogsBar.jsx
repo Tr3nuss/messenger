@@ -16,7 +16,7 @@ export default function DialogsBar() {
         <Box padding='0.625rem 0rem' maxWidth={'800px'} margin={"auto"}  display={"flex"} gap={'50px'}
              alignItems={"center"} justifyContent={"center"} borderBottom={'1px solid #000'}>
             <TextField
-              sx={{ width: "286px", bgcolor: "gray", borderRadius: '0.5rem' }}
+              sx={{ width: "500px", bgcolor: "gray", borderRadius: '0.5rem' }}
               label="Поиск по сообщениям"
               size="small"
               variant="outlined"
