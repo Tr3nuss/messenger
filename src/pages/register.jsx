@@ -73,12 +73,12 @@ export default function Register() {
                   textTransform: "none",
                   border: "1px solid #E6563D",
                   "&:hover": { background: "#E6563D" },
-                  color: "white",
+
                   textDecoration: "none",
                 }}
                 variant="contained"
               >
-                <Link to="/login" className="register-button-confirm">
+                <Link to="/mail" className="register-button-confirm">
                   Создать аккаунт
                 </Link>
               </Button>

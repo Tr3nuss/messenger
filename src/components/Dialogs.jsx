@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import DialogsBar from "./DialogsBar.jsx";
+import DialogList from "./DialogList.jsx";
 
 
 export default function Dialogs() {
@@ -10,6 +11,7 @@ export default function Dialogs() {
                  backgroundColor={'#363330'} borderRadius={'10px'} >
 
                 <DialogsBar />
+                <DialogList />
 
             </Box>
 
