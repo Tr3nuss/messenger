@@ -22,7 +22,7 @@ export default function DialogList() {
     return (
         <>
             {message.map((user) => (
-                <Link key={user.id} to='/mail/:id'>
+                <Link key={user.id} to={`/mail/${user.id}`}>
                     <Box padding='16px' height='80px' borderBottom='1px solid #000'
                          display='flex' alignItems='center' justifyContent='space-between' bgcolor='#363330'>
                         <Box display={'flex'} alignItems={'center'} gap={'10px'}>
